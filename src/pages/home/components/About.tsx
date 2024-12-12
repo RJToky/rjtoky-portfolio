@@ -3,7 +3,7 @@ import me from "../../../assets/img/Me.jpg";
 
 export default function About() {
   return (
-    <Section className="py-24 relative flex flex-col items-center justify-center">
+    <Section className="py-28 relative flex flex-col items-center justify-center">
       <h2
         className="text-7xl font-monument-regular mb-20 text-stroke uppercase opacity-70 flex items-center gap-10 tracking-wide"
         style={{ WebkitTextStroke: `1px white` }}
@@ -12,7 +12,7 @@ export default function About() {
         About Me
         <span className="w-32 h-[1px] bg-white"></span>
       </h2>
-      <div className="flex items-center h-full relative z-10 gap-x-20">
+      <div className="flex items-center relative z-10 gap-x-20">
         <div className="w-fit flex flex-col items-center">
           <img
             src={me}
@@ -42,13 +42,6 @@ export default function About() {
           </p>
         </div>
       </div>
-
-      {/* <div
-        className="w-[50rem] h-[50rem] rounded-full absolute top-0 translate-y-[-10%] left-[-30rem]"
-        style={{
-          background: `radial-gradient(circle, ${Colors.primary} -100%, transparent 60%)`,
-        }}
-      ></div> */}
     </Section>
   );
 }

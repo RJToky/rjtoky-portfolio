@@ -1,5 +1,7 @@
+import Footer from "../../layout/Footer";
 import Header from "../../layout/Header";
 import About from "./components/About";
+import Experiences from "./components/Experiences";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 
@@ -10,7 +12,8 @@ export default function Home() {
       <Hero />
       <About />
       <Skills />
-      {/* <div className="h-screen"></div> */}
+      <Experiences />
+      <Footer />
     </div>
   );
 }

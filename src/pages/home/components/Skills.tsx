@@ -3,7 +3,7 @@ import { Colors } from "../../../utils/colors";
 
 export default function Skills() {
   return (
-    <Section className="py-24 relative flex flex-col justify-center">
+    <Section className="py-28 relative flex flex-col justify-center">
       <h2
         className="text-7xl font-monument-regular mb-20 text-stroke uppercase opacity-70 flex items-center gap-10 mx-auto tracking-wide"
         style={{ WebkitTextStroke: `1px white` }}
