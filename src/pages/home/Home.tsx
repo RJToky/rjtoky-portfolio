@@ -1,6 +1,7 @@
 import Header from "../../layout/Header";
 import About from "./components/About";
 import Hero from "./components/Hero";
+import Skills from "./components/Skills";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <Skills />
       {/* <div className="h-screen"></div> */}
     </div>
   );
