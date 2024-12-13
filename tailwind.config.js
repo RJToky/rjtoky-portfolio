@@ -8,8 +8,8 @@ export default {
     extend: {
       colors: {
         primary: "#00bf63",
-        // dark: "#121212",
-        dark: "#090909"
+        dark: "#121212",
+        // dark: "#090909"
       },
       fontFamily: {
         // Montserrat

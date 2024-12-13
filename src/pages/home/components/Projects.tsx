@@ -1,7 +1,7 @@
 import Section from "../../../components/Section";
-import myportoflio from "../../../assets/img/Projects/MyPortfolio.png";
-import eart from "../../../assets/img/Projects/Eart.png";
-import gascar from "../../../assets/img/Projects/Gascar.png";
+import myportoflio from "../../../assets/img/Projects/MyPortfolio.webp";
+import eart from "../../../assets/img/Projects/Eart.webp";
+import gascar from "../../../assets/img/Projects/Gascar.webp";
 
 export default function Projects() {
   return (

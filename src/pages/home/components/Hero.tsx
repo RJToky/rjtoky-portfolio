@@ -18,12 +18,12 @@ export default function Hero() {
           <img
             src={pattern}
             alt="Pattern"
-            className="opacity-5 h-full w-full object-cover hidden md:block"
+            className="opacity-[0.07] h-full w-full object-cover hidden md:block"
           />
           <img
             src={patternSm}
             alt="Pattern"
-            className="opacity-5 h-full w-full object-cover block md:hidden"
+            className="opacity-[0.07] h-full w-full object-cover block md:hidden"
           />
           <div className="bg-gradient-to-b from-transparent to-dark w-full absolute top-0 h-full"></div>
         </div>
