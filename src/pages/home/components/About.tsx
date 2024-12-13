@@ -5,7 +5,7 @@ export default function About() {
   return (
     <Section className="py-28 relative flex flex-col items-center justify-center">
       <h2
-        className="text-7xl font-monument-regular mb-20 text-stroke uppercase opacity-70 flex items-center gap-10 tracking-wide"
+        className="text-5xl font-monument-regular mb-20 text-stroke uppercase opacity-40 flex items-center gap-10 tracking-wide"
         style={{ WebkitTextStroke: `1px white` }}
       >
         <span className="w-32 h-[1px] bg-white"></span>

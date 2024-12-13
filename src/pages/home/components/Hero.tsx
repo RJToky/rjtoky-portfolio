@@ -51,7 +51,7 @@ export default function Hero() {
                 size={30}
               />
             </Link>
-            <Link to={""} target="_blank">
+            <Link to="mailto:tokyrakotoarivony5@gmail.com">
               <LiaEnvelope
                 className="text-white hover:text-opacity-70 transition"
                 size={30}
