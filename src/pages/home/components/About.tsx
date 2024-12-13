@@ -1,5 +1,5 @@
 import Section from "../../../components/Section";
-import me from "../../../assets/img/Me.jpg";
+import me from "../../../assets/img/Me.webp";
 
 export default function About() {
   return (
