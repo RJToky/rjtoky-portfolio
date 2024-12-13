@@ -5,19 +5,19 @@ import gascar from "../../../assets/img/Projects/Gascar.png";
 
 export default function Projects() {
   return (
-    <Section className="py-28 relative flex flex-col z-10">
+    <Section className="md:py-28 py-20 relative flex flex-col z-10">
       <h2
-        className="text-5xl font-monument-regular mb-20 text-stroke uppercase opacity-40 flex items-center gap-10 tracking-wide"
+        className="lg:text-5xl md:text-4xl text-3xl font-monument-regular md:mb-20 mb-10 text-stroke uppercase opacity-40 flex items-center md:gap-10 gap-5 tracking-wide text-center"
         style={{ WebkitTextStroke: `1px white` }}
       >
         {/* <span className="w-32 h-[1px] bg-white"></span> */}
         Projects
-        <span className="w-32 h-[1px] bg-white"></span>
+        <span className="lg:w-32 md:w-28 w-20 h-[1px] bg-white"></span>
       </h2>
-      <h2 className="text-5xl font-monument-regular mb-10 text-white">
+      <h2 className="lg:text-5xl md:text-4xl text-3xl font-monument-regular mb-10 text-white">
         What I <span className="text-primary">Built</span> ?
       </h2>
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 sm:gap-8 gap-14">
         <div className="flex flex-col gap-5">
           <div>
             <img

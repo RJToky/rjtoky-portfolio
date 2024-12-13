@@ -1,5 +1,6 @@
 import Section from "../../../components/Section";
 import pattern from "../../../assets/img/Pattern/Light.png";
+import patternSm from "../../../assets/img/Pattern/Light-sm.png";
 import computer from "../../../assets/img/Computer.png";
 import {
   LiaEnvelope,
@@ -13,26 +14,31 @@ export default function Hero() {
   return (
     <>
       <div className="w-full absolute top-0 left-0">
-        <div className="relative h-screen">
+        <div className="relative md:h-screen h-[80vh]">
           <img
             src={pattern}
-            alt=""
-            className="opacity-15 h-full w-full object-cover"
+            alt="Pattern"
+            className="opacity-5 h-full w-full object-cover hidden md:block"
+          />
+          <img
+            src={patternSm}
+            alt="Pattern"
+            className="opacity-5 h-full w-full object-cover block md:hidden"
           />
           <div className="bg-gradient-to-b from-transparent to-dark w-full absolute top-0 h-full"></div>
         </div>
       </div>
-      <Section className="min-h-[calc(100vh-105px)] relative flex justify-between items-center">
+      <Section className="min-h-[calc(100vh-105px)] relative flex justify-between md:items-center md:flex-row flex-col md:py-0 py-20 gap-y-10">
         <div>
-          <p className="text-4xl text-white font-monument-regular leading-none mb-5 flex items-end">
+          <p className="lg:text-4xl text-3xl text-white font-monument-regular leading-none mb-5 flex items-end">
             Hello
             <span className="w-2 h-2 bg-primary rounded-full ml-1 mb-2"></span>
           </p>
-          <p className="text-8xl text-white font-montserrat-bold leading-none mb-5">
+          <p className="lg:text-8xl text-6xl text-white font-montserrat-bold leading-none mb-5">
             I'm <span className="text-primary">Toky</span>
           </p>
-          <p className="text-3xl text-white font-montserrat-semibold mt-4 flex items-center mb-5">
-            <span className="w-12 h-1 rounded bg-white mr-3"></span>
+          <p className="lg:text-3xl text-2xl text-white font-montserrat-semibold mt-4 flex items-center mb-5">
+            <span className="lg:w-12 w-8 h-1 rounded bg-white mr-3"></span>
             Full Stack Developer
           </p>
           <div className="flex items-center gap-3">
@@ -42,19 +48,19 @@ export default function Hero() {
             >
               <LiaLinkedinIn
                 className="text-white hover:text-opacity-70 transition"
-                size={30}
+                size={25}
               />
             </Link>
             <Link to={"https://github.com/RJToky"} target="_blank">
               <LiaGithub
                 className="text-white hover:text-opacity-70 transition"
-                size={30}
+                size={25}
               />
             </Link>
             <Link to="mailto:tokyrakotoarivony5@gmail.com">
               <LiaEnvelope
                 className="text-white hover:text-opacity-70 transition"
-                size={30}
+                size={25}
               />
             </Link>
             <Link
@@ -63,13 +69,17 @@ export default function Hero() {
             >
               <LiaFacebookF
                 className="text-white hover:text-opacity-70 transition"
-                size={30}
+                size={25}
               />
             </Link>
           </div>
         </div>
         <div>
-          <img src={computer} alt="" className="w-96" />
+          <img
+            src={computer}
+            alt=""
+            className="lg:max-w-96 sm:max-w-80 max-w-72 mx-auto"
+          />
         </div>
       </Section>
     </>

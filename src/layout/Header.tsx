@@ -9,13 +9,13 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full px-[10%] py-7 relative z-10">
+    <header className="w-full lg:px-[10%] md:px-[5%] px-4 py-7 relative z-10">
       <div className="flex items-center">
-        <img src={logo} alt="Logo" className="w-48" />
+        <img src={logo} alt="Logo" className="lg:w-48 md:w-40 w-32" />
         <div className="ml-auto">
           <button
             onClick={downloadFile}
-            className="text-white font-montserrat-semibold text-lg hover:text-opacity-70 transition"
+            className="text-white font-montserrat-semibold md:text-lg text-base hover:text-opacity-70 transition"
           >
             Get Resume &#8599;
           </button>

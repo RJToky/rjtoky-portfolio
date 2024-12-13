@@ -5,7 +5,7 @@ interface SectionProps {
 
 export default function Section({ children, className }: SectionProps) {
   return (
-    <section className={`w-full px-[10%] mx-auto ${className}`}>
+    <section className={`w-full lg:px-[10%] md:px-[5%] px-4 ${className}`}>
       {children}
     </section>
   );
