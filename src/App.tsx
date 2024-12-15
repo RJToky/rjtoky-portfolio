@@ -5,13 +5,13 @@ import { LoadingProvider } from "./context/LoadingContext";
 
 function App() {
   return (
-    <LoadingProvider>
-      <BrowserRouter>
+    <BrowserRouter>
+      <LoadingProvider>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
-      </BrowserRouter>
-    </LoadingProvider>
+      </LoadingProvider>
+    </BrowserRouter>
   );
 }
 
