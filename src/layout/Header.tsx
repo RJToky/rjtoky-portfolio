@@ -15,7 +15,7 @@ export default function Header() {
         <div className="ml-auto">
           <button
             onClick={downloadFile}
-            className="text-white font-montserrat-semibold md:text-lg text-base hover:text-opacity-70 transition"
+            className="text-white font-montserrat-semibold md:text-lg sm:text-base text-sm hover:text-opacity-70 transition"
           >
             Get Resume &#8599;
           </button>

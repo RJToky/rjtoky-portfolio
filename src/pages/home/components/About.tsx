@@ -30,13 +30,13 @@ export default function About() {
           <h2 className="lg:text-5xl md:text-4xl text-3xl font-monument-regular mb-10 text-white">
             <span className="text-primary">Who</span> I Am ?
           </h2>
-          <p className="text-base text-white text-opacity-80 font-montserrat-regular mb-5 text-justify">
+          <p className="sm:text-base text-white text-opacity-80 font-montserrat-regular mb-5 text-justify">
             I am a Full Stack Developer with 2 years of experience. I have a
             passion for web development and love to create websites and web
             applications. I am always eager to learn new technologies and
             improve my skills.
           </p>
-          <p className="text-base text-white text-opacity-80 font-montserrat-regular mb-5 text-justify">
+          <p className="sm:text-base text-white text-opacity-80 font-montserrat-regular mb-5 text-justify">
             I enjoy working on challenging and innovative projects that push my
             limits, expand my skill set, and allow me to continuously grow as a
             developer. I thrive in environments where I can solve complex

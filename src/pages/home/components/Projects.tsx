@@ -17,7 +17,7 @@ export default function Projects() {
       <h2 className="lg:text-5xl md:text-4xl text-3xl font-monument-regular mb-10 text-white">
         What I <span className="text-primary">Built</span> ?
       </h2>
-      <div className="grid lg:grid-cols-3 sm:grid-cols-2 sm:gap-8 gap-14">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 sm:gap-8 gap-20">
         <div className="flex flex-col gap-5">
           <div>
             <img
@@ -107,13 +107,6 @@ export default function Projects() {
           </div>
         </div>
       </div>
-
-      {/* <div
-        className="w-[50rem] h-[50rem] rounded-full absolute top-0 translate-y-[-10%] right-[-30rem]"
-        style={{
-          background: `radial-gradient(circle, ${Colors.primary} -100%, transparent 60%)`,
-        }}
-      ></div> */}
     </Section>
   );
 }
