@@ -10,34 +10,13 @@ import {
 } from "react-icons/lia";
 import { Link } from "react-router-dom";
 import Reveal from "../../../components/Reveal";
-import { motion, useAnimation, useInView } from "motion/react";
-import { useEffect, useRef } from "react";
+import { motion } from "motion/react";
 
 export default function Hero() {
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true });
-
-  const mainControls = useAnimation();
-
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-    }
-  }, [isInView]);
-
   return (
     <>
       <div className="w-full absolute top-0 left-0">
-        <motion.div
-          className="relative md:h-screen h-[80vh]"
-          ref={ref}
-          variants={{
-            visible: { opacity: 1 },
-          }}
-          initial={{ opacity: 0 }}
-          animate={mainControls}
-          transition={{ duration: 0.5, delay: 1 }}
-        >
+        <div className="relative md:h-screen h-[80vh]">
           <img
             src={pattern}
             alt="Pattern"
@@ -49,7 +28,7 @@ export default function Hero() {
             className="opacity-[0.1] h-full w-full object-cover block md:hidden"
           />
           <div className="bg-gradient-to-b from-transparent to-dark w-full absolute top-0 h-full"></div>
-        </motion.div>
+        </div>
       </div>
       <Section className="min-h-[calc(100vh-105px)] relative flex md:justify-between md:items-center md:flex-row flex-col md:py-0 py-20 gap-y-20">
         <div>
@@ -114,7 +93,7 @@ export default function Hero() {
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 1, duration: 0.5 }}
+          transition={{ delay: 2, duration: 0.5 }}
         >
           <img
             src={computer}
