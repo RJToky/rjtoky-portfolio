@@ -1,7 +1,7 @@
 import Section from "../../../components/Section";
 import pattern from "../../../assets/img/Pattern/Light.png";
 import patternSm from "../../../assets/img/Pattern/Light-sm.png";
-import computer from "../../../assets/img/Computer.png";
+import computer from "../../../assets/img/Computer.webp";
 import {
   LiaEnvelope,
   LiaFacebookF,
