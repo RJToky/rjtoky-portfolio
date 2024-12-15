@@ -60,18 +60,16 @@ export default function Experiences() {
                 Full Stack Developer, Internship
               </h4>
             </Reveal>
-            <ul className="list-disc pl-5">
-              <Reveal delay={0.55}>
+            <Reveal delay={0.55}>
+              <ul className="list-disc pl-5">
                 <li className="text-base text-white text-opacity-80 font-montserrat-regular">
                   Developed a web application for the company's internal use.
                 </li>
-              </Reveal>
-              <Reveal delay={0.6}>
                 <li className="text-base text-white text-opacity-80 font-montserrat-regular">
                   Implemented a user-friendly interface for the application.
                 </li>
-              </Reveal>
-            </ul>
+              </ul>
+            </Reveal>
           </div>
         </div>
       </div>
