@@ -47,11 +47,21 @@ export default function About() {
 
       <div className="flex md:flex-row flex-col-reverse items-center relative z-10 gap-x-20 gap-y-10">
         <div className="w-fit flex flex-col items-center">
-          <img
-            src={me}
-            alt="Me"
-            className="rounded-full md:w-52 w-44 md:h-52 h-44 object-cover brightness-90 border-4 border-white mb-5"
-          />
+          <motion.div
+            ref={ref}
+            variants={{
+              visible: { opacity: 1 },
+            }}
+            initial={{ opacity: 0 }}
+            animate={mainControls}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            <img
+              src={me}
+              alt="Me"
+              className="rounded-full md:w-52 w-44 md:h-52 h-44 object-cover brightness-90 border-4 border-white mb-5"
+            />
+          </motion.div>
           <Reveal delay={0.2}>
             <h3 className="md:text-2xl text-xl font-montserrat-medium text-white  text-center">
               Rakotoarivony

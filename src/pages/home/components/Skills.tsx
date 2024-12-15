@@ -18,25 +18,14 @@ export default function Skills() {
 
   return (
     <Section className="md:py-28 py-20 relative flex flex-col justify-center">
-      <div className="relative z-10">
+      <div className="relative z-10" ref={ref}>
         <h2
           className="md:hidden flex lg:text-5xl md:text-4xl text-3xl font-monument-regular md:mb-20 mb-10 text-stroke uppercase opacity-40 items-center md:gap-10 gap-5 md:mx-auto tracking-wide text-center"
           style={{ WebkitTextStroke: `1px white` }}
         >
-          <motion.span
-            className="lg:w-32 md:w-28 w-20 md:block hidden h-[1px] bg-white origin-left"
-            ref={ref}
-            variants={{
-              visible: { scaleX: 1 },
-            }}
-            initial={{ scaleX: 0 }}
-            animate={mainControls}
-            transition={{ duration: 0.5 }}
-          ></motion.span>
           <Reveal>Skills</Reveal>
           <motion.span
             className="lg:w-32 md:w-28 w-20 h-[1px] bg-white origin-left"
-            ref={ref}
             variants={{
               visible: { scaleX: 1 },
             }}
@@ -53,7 +42,6 @@ export default function Skills() {
             >
               <motion.span
                 className="w-[1px] h-20 bg-white origin-top"
-                ref={ref}
                 variants={{
                   visible: { scaleY: 1 },
                 }}
