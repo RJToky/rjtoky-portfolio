@@ -9,6 +9,8 @@ import {
   LiaLinkedinIn,
 } from "react-icons/lia";
 import { Link } from "react-router-dom";
+import Reveal from "../../../components/Reveal";
+import { motion } from "motion/react";
 
 export default function Hero() {
   return (
@@ -30,57 +32,75 @@ export default function Hero() {
       </div>
       <Section className="min-h-[calc(100vh-105px)] relative flex md:justify-between md:items-center md:flex-row flex-col md:py-0 py-20 gap-y-20">
         <div>
-          <p className="lg:text-4xl sm:text-3xl text-2xl text-white font-monument-regular leading-none mb-5 flex items-end">
-            Hello
-            <span className="md:w-2 md:h-2 w-1.5 h-1.5 bg-primary rounded-full ml-1 md:mb-2 mb-1"></span>
-          </p>
-          <p className="lg:text-7xl md:text-6xl text-5xl text-white font-montserrat-bold leading-none mb-5">
-            I'm <span className="text-primary">Toky</span>
-          </p>
-          <p className="lg:text-3xl md:text-2xl text-xl text-white font-montserrat-semibold mt-4 flex items-center mb-5">
-            <span className="lg:w-12 w-8 h-1 rounded bg-white mr-3"></span>
-            Full Stack Developer
-          </p>
+          <Reveal delay={0.5}>
+            <p className="lg:text-4xl sm:text-3xl text-2xl text-white font-monument-regular leading-none mb-5 flex items-end">
+              Hello
+              <span className="md:w-2 md:h-2 w-1.5 h-1.5 bg-primary rounded-full ml-1 md:mb-2 mb-1"></span>
+            </p>
+          </Reveal>
+          <Reveal delay={0.7}>
+            <p className="lg:text-7xl md:text-6xl text-5xl text-white font-montserrat-bold leading-none mb-5">
+              I'm <span className="text-primary">Toky</span>
+            </p>
+          </Reveal>
+          <Reveal delay={0.7}>
+            <p className="lg:text-3xl md:text-2xl text-xl text-white font-montserrat-semibold mt-4 flex items-center mb-5">
+              <span className="lg:w-12 w-8 h-1 rounded bg-white mr-3"></span>
+              Full Stack Developer
+            </p>
+          </Reveal>
           <div className="flex items-center gap-3">
-            <Link
-              to={"https://linkedin.com/in/toky-rakotoarivony-5aba3a237"}
-              target="_blank"
-            >
-              <LiaLinkedinIn
-                className="text-white hover:text-opacity-70 transition"
-                size={22}
-              />
-            </Link>
-            <Link to={"https://github.com/RJToky"} target="_blank">
-              <LiaGithub
-                className="text-white hover:text-opacity-70 transition"
-                size={22}
-              />
-            </Link>
-            <Link to="mailto:tokyrakotoarivony5@gmail.com">
-              <LiaEnvelope
-                className="text-white hover:text-opacity-70 transition"
-                size={22}
-              />
-            </Link>
-            <Link
-              to={"https://www.facebook.com/toky.rakotoarivony.58/"}
-              target="_blank"
-            >
-              <LiaFacebookF
-                className="text-white hover:text-opacity-70 transition"
-                size={22}
-              />
-            </Link>
+            <Reveal delay={0.7}>
+              <Link
+                to={"https://linkedin.com/in/toky-rakotoarivony-5aba3a237"}
+                target="_blank"
+              >
+                <LiaLinkedinIn
+                  className="text-white hover:text-opacity-70 transition"
+                  size={22}
+                />
+              </Link>
+            </Reveal>
+            <Reveal delay={0.8}>
+              <Link to={"https://github.com/RJToky"} target="_blank">
+                <LiaGithub
+                  className="text-white hover:text-opacity-70 transition"
+                  size={22}
+                />
+              </Link>{" "}
+            </Reveal>
+            <Reveal delay={0.9}>
+              <Link to="mailto:tokyrakotoarivony5@gmail.com">
+                <LiaEnvelope
+                  className="text-white hover:text-opacity-70 transition"
+                  size={22}
+                />
+              </Link>{" "}
+            </Reveal>
+            <Reveal delay={1}>
+              <Link
+                to={"https://www.facebook.com/toky.rakotoarivony.58/"}
+                target="_blank"
+              >
+                <LiaFacebookF
+                  className="text-white hover:text-opacity-70 transition"
+                  size={22}
+                />
+              </Link>{" "}
+            </Reveal>
           </div>
         </div>
-        <div>
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 2, duration: 0.5 }}
+        >
           <img
             src={computer}
             alt=""
             className="lg:max-w-96 sm:max-w-80 max-w-64 mx-auto"
           />
-        </div>
+        </motion.div>
       </Section>
     </>
   );
