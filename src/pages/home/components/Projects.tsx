@@ -44,11 +44,13 @@ export default function Projects() {
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 sm:gap-8 gap-20">
         <div className="flex flex-col gap-5">
           <div>
-            <img
-              src={myportoflio}
-              alt="Mockup - MyPortfolio"
-              className="w-full h-full object-cover"
-            />
+            <Reveal>
+              <img
+                src={myportoflio}
+                alt="Mockup - MyPortfolio"
+                className="w-full h-full object-cover"
+              />
+            </Reveal>
           </div>
           <div className="">
             <Reveal>
@@ -76,14 +78,15 @@ export default function Projects() {
             </Reveal>
           </div>
         </div>
-
         <div className="flex flex-col gap-5">
           <div>
-            <img
-              src={eart}
-              alt="Mockup - Ear"
-              className="w-full h-full object-cover"
-            />
+            <Reveal>
+              <img
+                src={eart}
+                alt="Mockup - Ear"
+                className="w-full h-full object-cover"
+              />
+            </Reveal>
           </div>
           <div>
             <Reveal>
@@ -112,14 +115,15 @@ export default function Projects() {
             </Reveal>
           </div>
         </div>
-
         <div className="flex flex-col gap-5">
           <div>
-            <img
-              src={gascar}
-              alt="Mockup - Gascar"
-              className="w-full h-full object-cover"
-            />
+            <Reveal>
+              <img
+                src={gascar}
+                alt="Mockup - Gascar"
+                className="w-full h-full object-cover"
+              />
+            </Reveal>
           </div>
           <div>
             <Reveal>
