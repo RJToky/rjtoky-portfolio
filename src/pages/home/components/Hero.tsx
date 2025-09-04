@@ -56,7 +56,7 @@ export default function Hero() {
                 target="_blank"
               >
                 <LiaLinkedinIn
-                  className="text-white hover:text-opacity-70 transition"
+                  className="text-white hover:scale-[1.15] transition"
                   size={22}
                 />
               </Link>
@@ -64,7 +64,7 @@ export default function Hero() {
             <Reveal delay={0.8}>
               <Link to={"https://github.com/RJToky"} target="_blank">
                 <LiaGithub
-                  className="text-white hover:text-opacity-70 transition"
+                  className="text-white hover:scale-[1.15] transition"
                   size={22}
                 />
               </Link>{" "}
@@ -72,7 +72,7 @@ export default function Hero() {
             <Reveal delay={0.9}>
               <Link to="mailto:tokyrakotoarivony5@gmail.com">
                 <LiaEnvelope
-                  className="text-white hover:text-opacity-70 transition"
+                  className="text-white hover:scale-[1.15] transition"
                   size={22}
                 />
               </Link>{" "}
@@ -83,7 +83,7 @@ export default function Hero() {
                 target="_blank"
               >
                 <LiaFacebookF
-                  className="text-white hover:text-opacity-70 transition"
+                  className="text-white hover:scale-[1.15] transition"
                   size={22}
                 />
               </Link>{" "}

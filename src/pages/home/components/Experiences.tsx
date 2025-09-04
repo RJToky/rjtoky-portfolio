@@ -4,6 +4,7 @@ import { Colors } from "../../../utils/colors";
 import { motion, useAnimation, useInView } from "motion/react";
 import { useEffect, useRef } from "react";
 import Reveal from "../../../components/Reveal";
+import experiences from "../../../data/experiences.json";
 
 export default function Experiences() {
   const ref = useRef<HTMLDivElement>(null);
@@ -42,35 +43,42 @@ export default function Experiences() {
           </h2>
         </Reveal>
         <div className="grid md:grid-cols-2 gap-5">
-          <div className="bg-white bg-opacity-[0.01] md:p-8 p-5 border border-white/10 rounded-lg">
-            <Reveal delay={0.4}>
-              <h4 className="text-base text-white/40 text-opacity-80 font-montserrat-medium">
-                Feb. 2023 - Nov. 2024
-              </h4>
-            </Reveal>
-            <Reveal delay={0.45}>
-              <Link to="https://www.kanteco.com/" target="_blank">
-                <h3 className="text-2xl font-montserrat-semibold text-primary hover:text-opacity-70 transition mb-1">
-                  Kante Company &#8599;
-                </h3>
-              </Link>
-            </Reveal>
-            <Reveal delay={0.5}>
-              <h4 className="text-base font-montserrat-regular uppercase text-white mb-5">
-                Full Stack Developer, Internship
-              </h4>
-            </Reveal>
-            <Reveal delay={0.55}>
-              <ul className="list-disc pl-5">
-                <li className="text-base text-white text-opacity-80 font-montserrat-regular">
-                  Developed a web application for the company's internal use.
-                </li>
-                <li className="text-base text-white text-opacity-80 font-montserrat-regular">
-                  Implemented a user-friendly interface for the application.
-                </li>
-              </ul>
-            </Reveal>
-          </div>
+          {experiences.map((experience, index) => (
+            <div
+              key={index}
+              className="bg-white bg-opacity-[0.01] md:p-8 p-5 border border-white/10 rounded-lg"
+            >
+              <Reveal delay={0.4}>
+                <h4 className="text-base text-white/40 text-opacity-80 font-montserrat-medium">
+                  {experience.duration}
+                </h4>
+              </Reveal>
+              <Reveal delay={0.45}>
+                <Link
+                  to={experience.companyUrl}
+                  target={experience.companyUrl ? "_blank" : ""}
+                >
+                  <h3 className="text-2xl font-montserrat-semibold text-primary hover:text-opacity-70 transition mb-1">
+                    {experience.company} {experience.companyUrl && <>&#8599;</>}
+                  </h3>
+                </Link>
+              </Reveal>
+              <Reveal delay={0.5}>
+                <h4 className="text-base font-montserrat-regular uppercase text-white mb-5">
+                  {experience.position}
+                </h4>
+              </Reveal>
+              <Reveal delay={0.55}>
+                <ul className="list-disc pl-5">
+                  {experience.description.map((desc) => (
+                    <li className="text-base text-white text-opacity-80 font-montserrat-regular">
+                      {desc}
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+            </div>
+          ))}
         </div>
       </div>
 

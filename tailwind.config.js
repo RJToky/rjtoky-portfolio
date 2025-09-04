@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -13,22 +10,21 @@ export default {
       },
       fontFamily: {
         // Montserrat
-        'montserrat-thin': ['Montserrat-Thin'],
-        'montserrat-extralight': ['Montserrat-ExtraLight'],
-        'montserrat-light': ['Montserrat-Light'],
-        'montserrat-regular': ['Montserrat-Regular'],
-        'montserrat-medium': ['Montserrat-Medium'],
-        'montserrat-semibold': ['Montserrat-SemiBold'],
-        'montserrat-bold': ['Montserrat-Bold'],
-        'montserrat-extrabold': ['Montserrat-ExtraBold'],
-        'montserrat-black': ['Montserrat-Black'],
+        "montserrat-thin": ["Montserrat-Thin"],
+        "montserrat-extralight": ["Montserrat-ExtraLight"],
+        "montserrat-light": ["Montserrat-Light"],
+        "montserrat-regular": ["Montserrat-Regular"],
+        "montserrat-medium": ["Montserrat-Medium"],
+        "montserrat-semibold": ["Montserrat-SemiBold"],
+        "montserrat-bold": ["Montserrat-Bold"],
+        "montserrat-extrabold": ["Montserrat-ExtraBold"],
+        "montserrat-black": ["Montserrat-Black"],
 
         // Monument
-        'monument-regular': ['Monument-Regular'],
-        'monument-ultrabold': ['Monument-UltraBold'],
-      }
+        "monument-regular": ["Monument-Regular"],
+        "monument-ultrabold": ["Monument-UltraBold"],
+      },
     },
   },
   plugins: [],
-}
-
+};

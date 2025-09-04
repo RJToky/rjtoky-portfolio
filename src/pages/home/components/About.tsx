@@ -7,6 +7,7 @@ import { useEffect, useRef } from "react";
 export default function About() {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
+  const experience = new Date().getFullYear() - 2023;
 
   const mainControls = useAnimation();
 
@@ -82,10 +83,10 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.4}>
             <p className="sm:text-base text-white text-opacity-80 font-montserrat-regular mb-5 text-justify">
-              I am a Full Stack Developer with 2 years of experience. I have a
-              passion for web development and love to create websites and web
-              applications. I am always eager to learn new technologies and
-              improve my skills.
+              I am a Full Stack Developer with {experience} years of experience.
+              I have a passion for web development and love to create websites
+              and web applications. I am always eager to learn new technologies
+              and improve my skills.
             </p>
           </Reveal>
           <Reveal delay={0.5}>
