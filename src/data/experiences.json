@@ -1,0 +1,32 @@
+[
+  {
+    "company": "Stratochange",
+    "companyUrl": "https://stratochange.com",
+    "position": "Frontend Developer, Part-time",
+    "duration": "May 2025 - Aug. 2025",
+    "description": [
+      "Designed and developed the interface of a collaborative module.",
+      "Built the Stratochange website with product details, pricing, and contact section."
+    ]
+  },
+  {
+    "company": "Individual Client",
+    "companyUrl": "",
+    "position": "Web Developer, Freelance",
+    "duration": "Feb. 2025 - Mar. 2025",
+    "description": [
+      "Developed a 'Quiz Game' website with bilingual support (Portuguese/French).",
+      "Integrated Bookeo for online booking."
+    ]
+  },
+  {
+    "company": "Kante Company",
+    "companyUrl": "https://kanteco.com",
+    "position": "Full Stack Developer, Internship",
+    "duration": "Feb. 2023 - Nov. 2024",
+    "description": [
+      "Developed a web application for the company's internal use.",
+      "Implemented a user-friendly interface for the application."
+    ]
+  }
+]

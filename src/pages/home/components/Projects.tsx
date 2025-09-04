@@ -66,10 +66,10 @@ export default function Projects() {
             <Reveal>
               <div className="flex flex-wrap gap-3">
                 <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
-                  React JS
+                  React.js
                 </span>
                 <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
-                  Tailwind CSS
+                  TailwindCSS
                 </span>
                 <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
                   Sass
@@ -103,10 +103,10 @@ export default function Projects() {
             <Reveal>
               <div className="flex flex-wrap gap-3">
                 <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
-                  React JS
+                  React.js
                 </span>
                 <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
-                  Tailwind CSS
+                  TailwindCSS
                 </span>
                 <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
                   Sass
@@ -140,7 +140,7 @@ export default function Projects() {
             <Reveal>
               <div className="flex flex-wrap gap-3">
                 <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
-                  React JS
+                  React.js
                 </span>
                 <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
                   Spring Boot

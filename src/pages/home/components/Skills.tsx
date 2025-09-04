@@ -95,19 +95,19 @@ export default function Skills() {
                       Angular
                     </span>
                     <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
-                      React JS
+                      React.js
+                    </span>
+                    <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
+                      Vue.js
                     </span>
                     <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
                       React Native
                     </span>
                     <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
-                      Flutter
-                    </span>
-                    <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
                       Sass
                     </span>
                     <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
-                      Tailwind CSS
+                      TailwindCSS
                     </span>
                     <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
                       Bootstrap
@@ -131,7 +131,7 @@ export default function Skills() {
                 <Reveal delay={0.8}>
                   <div className="flex flex-wrap gap-3">
                     <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
-                      Spring boot
+                      Spring Boot
                     </span>
                     <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
                       .NET Core
