@@ -1,4 +1,5 @@
 import Section from "../../../components/Section";
+import quizgame from "../../../assets/img/Projects/QuizGame.webp";
 import myportoflio from "../../../assets/img/Projects/MyPortfolio.webp";
 import eart from "../../../assets/img/Projects/Eart.webp";
 import gascar from "../../../assets/img/Projects/Gascar.webp";
@@ -42,6 +43,44 @@ export default function Projects() {
         </h2>
       </Reveal>
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 sm:gap-8 gap-20">
+        <div className="flex flex-col gap-5">
+          <div>
+            <Reveal>
+              <img
+                src={quizgame}
+                alt="Mockup - Quiz Game"
+                className="w-full h-full object-cover"
+              />
+            </Reveal>
+          </div>
+          <div className="">
+            <Reveal>
+              <h3 className="text-2xl font-montserrat-semibold text-white mb-3">
+                Quiz Game
+              </h3>
+            </Reveal>
+            <Reveal>
+              <p className="text-base text-white text-opacity-80 font-montserrat-regular mb-3">
+                A “Quiz Game” website showcasing the concept and gameplay, with
+                an integrated booking system via Bookeo.
+              </p>
+            </Reveal>
+            <Reveal>
+              <div className="flex flex-wrap gap-3">
+                <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
+                  React.js
+                </span>
+                <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
+                  TailwindCSS
+                </span>
+                <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
+                  Sass
+                </span>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+
         <div className="flex flex-col gap-5">
           <div>
             <Reveal>
@@ -115,7 +154,7 @@ export default function Projects() {
             </Reveal>
           </div>
         </div>
-        <div className="flex flex-col gap-5">
+        {/* <div className="flex flex-col gap-5">
           <div>
             <Reveal>
               <img
@@ -151,7 +190,7 @@ export default function Projects() {
               </div>
             </Reveal>
           </div>
-        </div>
+        </div> */}
       </div>
     </Section>
   );
