@@ -2,7 +2,6 @@ import Section from "../../../components/Section";
 import quizgame from "../../../assets/img/Projects/QuizGame.webp";
 import myportoflio from "../../../assets/img/Projects/MyPortfolio.webp";
 import eart from "../../../assets/img/Projects/Eart.webp";
-import gascar from "../../../assets/img/Projects/Gascar.webp";
 import Reveal from "../../../components/Reveal";
 import { motion, useAnimation, useInView } from "motion/react";
 import { useEffect, useRef } from "react";
@@ -154,43 +153,6 @@ export default function Projects() {
             </Reveal>
           </div>
         </div>
-        {/* <div className="flex flex-col gap-5">
-          <div>
-            <Reveal>
-              <img
-                src={gascar}
-                alt="Mockup - Gascar"
-                className="w-full h-full object-cover"
-              />
-            </Reveal>
-          </div>
-          <div>
-            <Reveal>
-              <h3 className="text-2xl font-montserrat-semibold text-white mb-3">
-                Gascar
-              </h3>
-            </Reveal>
-            <Reveal>
-              <p className="text-base text-white text-opacity-80 font-montserrat-regular mb-3">
-                A platform that simplifies buying and selling used cars,
-                providing a secure space for transactions.
-              </p>
-            </Reveal>
-            <Reveal>
-              <div className="flex flex-wrap gap-3">
-                <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
-                  React.js
-                </span>
-                <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
-                  Spring Boot
-                </span>
-                <span className="text-white/80 rounded-full font-montserrat-regular text-sm px-4 py-1 border border-primary/80">
-                  PostgreSQL
-                </span>
-              </div>
-            </Reveal>
-          </div>
-        </div> */}
       </div>
     </Section>
   );
